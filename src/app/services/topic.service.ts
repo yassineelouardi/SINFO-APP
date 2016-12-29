@@ -5,7 +5,7 @@ import {Observable} from 'rxjs/Rx';
 @Injectable()
 export class TopicService{
  
-   endpoint_url:string = "http://localhost:9002/topics";
+   endpoint_url:string = "http://localhost/sinfo/topics";
 
     http:Http;
    constructor(http: Http){
