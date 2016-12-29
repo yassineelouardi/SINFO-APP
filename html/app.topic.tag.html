@@ -1,0 +1,26 @@
+
+<div class="container" *ngIf="routeIsActive('topics')">
+
+
+    <div *ngFor="let topic of topics | paginate: {itemsPerPage: 12, currentPage:page, id: '1'}" >
+      <div class="jumbotron">
+      <div class="glyphicon glyphicon-align-justify"></div>
+        <span class="badge">{{topic.tag.titleTag}}</span>
+        <h3>{{topic.titleTopic}}</h3>
+        <p>{{topic.descrTopic}}</p>
+       <a class="btn btn-primary"
+		[routerLink]="['/topicmore', topic.idTopic]"
+		routerLinkActive="active">More</a>
+
+      </div>
+	</div>
+	 <pagination-controls (pageChange)="page = $event" id="1"
+                      maxSize="12"
+                      directionLinks="true"
+                      autoHide="true">
+                </pagination-controls>
+
+<router-outlet ></router-outlet>
+</div>
+
+

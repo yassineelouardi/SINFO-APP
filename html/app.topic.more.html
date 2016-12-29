@@ -1,0 +1,29 @@
+<div class="container bs-docs-container" id="more" *ngIf="routeIsActive('topicmore')">
+
+	<div *ngIf="topic" class="row">
+		<div class="bs-docs-section">
+			<div class="bs-callout bs-callout-warning">
+				<h4>
+					<i>{{icon}} More # {{topic.titleTopic}}</i>
+				</h4>
+				
+				<div class="bs-calloutwarning">
+					<label>ID </label>{{topic.idTopic}}
+					<label>Topic Stack : </label>{{topic.descrTopic}} <label>Topic
+					Stack : </label>{{topic.descrTopic}} <label>Topic Stack : </label>{{topic.descrTopic}}
+				</div>
+			</div>
+
+			<div>
+					<div class="bs-callout bs-callout-info">
+				<label>Topic Stack : </label>{{topic.descrTopic}}
+			{{topic.descrTopic}}</div>
+			</div>
+		</div>
+	</div>
+<router-outlet ></router-outlet>
+</div>
+
+
+
+

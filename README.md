@@ -1,2 +1,0 @@
-# SINFO-APP
-Apps SINFO
